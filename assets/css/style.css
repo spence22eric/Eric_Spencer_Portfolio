@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #464646;
+    color: #DBF9F3;
+    display: flex;
+    padding: 20px 35px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header nav {
+    margin: 7px 0;
+  }
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.3vw;     
+}
+
+header a {
+    color: #DBF9F3;
+    text-decoration: none;
+}

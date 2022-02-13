@@ -1,43 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: #464646;
-    color: #DBF9F3;
-    display: flex;
-    padding: 20px 35px;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    font-size: 25px;
+  background-color: #464646;
+  color: #dbf9f3;
+  display: flex;
+  padding: 20px 35px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
 header h1 {
-    font-weight: bold;
-}
-
-header nav {
-    margin: 7px 0;
-  }
-
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.3vw;     
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
-    color: #DBF9F3;
-    text-decoration: none;
+  color: #dbf9f3;
+  text-decoration: none;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.5vw;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.about-me {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid cyan;
+}
+
+.about-me div {
+  display: flex;
+  border: 3px solid red;
+  align-content: center;
+  align-content: flex-start;
+}
+
+.about-me h2 {
+  display: flex;
+  font-style: italic;
+  font-size: 55px;
+  padding: 20px 35px;
+  align-items: center;
+  border: 5px solid blue;
+  width: 50%;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.about-me p {
+  display: flex;
+  width: 100%;
+  margin: 3.5% auto;
+  text-align: left;
+  font-size: 23px;
+  line-height: 1.2;
+  border: 3px solid black;
+  flex-flow: column wrap;  
+}
+
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  height: 350px;
+  position: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }

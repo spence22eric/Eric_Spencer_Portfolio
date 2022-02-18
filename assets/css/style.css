@@ -18,11 +18,22 @@ header {
   align-content: center;
   align-items: center;
   font-size: 25px;
+  position: relative;
+  height: 100px;
 }
 
 header h1 {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-weight: bold;
+  height: 60px;
+  width: 20%;
+  background: #2896c9;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  bottom: 8px;
+  left: 1px;
 }
 
 header a {
@@ -70,6 +81,8 @@ header nav ul li a {
   width: 20%;
   margin-top: 20px;
   color: #1c5380;
+  justify-content: flex-end;
+  align-items: flex-start;
   text-align: right;
 }
 
@@ -122,35 +135,48 @@ header nav ul li a {
   align-items: flex-end;
   border: 5px solid #2896c9;
   width: 90%;
-  flex-direction: row;
+  flex: 1 90%;
+  flex-wrap: wrap;
 }
 
 /* allows the selectors below this entry to position correctly. */
-.run-buddy, .google-project, .horiseon-project {
+.run-buddy, .google-project, .horiseon-project,
+.amazon-project, .fb-project {
   position: relative;
 }
 
-/* positions div elements with project titles in bottom left corner of images */
-.run-buddy div, .google-project div, .horiseon-project div {
+.run-buddy a, .google-project a, .horiseon-project a,
+.amazon-project a, .fb-project a {
   display: flex;
-  position: absolute;
-  bottom: 20px;
-  background: #2896c9;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: bold;
-  color: white;
-  height: 40px;
-  width: 40%;
-  left: calc(5% + 5px);
-  flex-flow: column wrap;
 }
 
-.run-buddy div p {
+/* positions div elements with project titles in bottom left corner of images */
+/* not sure how to get these labels to flex when shrinking the screen yet. Text jumps out of the container */
+.run-buddy div, .google-project div, .horiseon-project div,
+.fb-project div, .amazon-project div {
   display: flex;
+  position: absolute;
+  bottom: 30px;
+  background: #2896c9;
   font-size: 15px;
+  font-style: italic;
+  font-weight: lighter;
+  color: white;
+  height: 60px;
+  width: 35%;
+  /* left: calc(5% + 10px); < -- Not sure why this needed to be changed to the below after adding <a> tag */
+  left: 1.6%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-label {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .projects {
   flex-wrap: wrap;
 }
+

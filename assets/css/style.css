@@ -140,12 +140,12 @@ header nav ul li a {
 }
 
 /* allows the selectors below this entry to position correctly. */
-.run-buddy, .google-project, .horiseon-project,
+.run-buddy, .google-project, .horiseon-project, 
 .amazon-project, .fb-project {
   position: relative;
 }
 
-.run-buddy a, .google-project a, .horiseon-project a,
+.run-buddy a, .google-project a, .horiseon-project a, 
 .amazon-project a, .fb-project a {
   display: flex;
 }
@@ -177,6 +177,9 @@ header nav ul li a {
 }
 
 .projects {
-  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
 }
 

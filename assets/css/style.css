@@ -60,6 +60,10 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
@@ -133,22 +137,6 @@ header nav ul li a {
   object-fit: cover;
 }
 
-/* allows the selectors below this entry to position correctly.
-.run-buddy, .google-project, .horiseon-project, 
-.amazon-project, .fb-project {
-  position: relative;
-} */
-
-/* .run-buddy a, .google-project a, .horiseon-project a, 
-.amazon-project a, .fb-project a {
-  display: flex;
-  width: auto;
-  border: blue 3px solid;
-} */
-
-/* positions div elements with project titles in bottom left corner of images */
-/* .run-buddy div, .google-project div, .horiseon-project div,
-.fb-project div, .amazon-project div { */
   .project-item {    
     min-height: 150px;
     max-height: 150px;
@@ -175,25 +163,21 @@ header nav ul li a {
 .google-project {
   background-image: url(../images/google-home.jpg);
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 
 .horiseon-project {
   background-image: url(../images/horiseon.png);
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 
 .amazon-project {
   background-image: url(../images/amazon.png);
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 
 .fb-project {
   background-image: url(../images/facebook.png);
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 
 #run-buddy {
@@ -233,3 +217,30 @@ header nav ul li a {
   flex-basis: 100%;
 }
 
+
+/* None of the below seemed to have an effect on anything. Background did not turn red after resizing */
+@media screen and (mad-width: 980px) {
+
+  /* header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    background: red;
+  }
+  
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  } */
+
+  /* .hero {
+    width: 100%;
+  } */
+
+}

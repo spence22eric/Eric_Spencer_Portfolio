@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Eric Spencer</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Eric Spencer</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
     <div class="header-name">
       <h1 href="./index.html">Eric Spencer</h1>
     </div>
-      <!-- Navigation Bar -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-section">About Me</a>
-          </li>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#about-section">About Me</a>
+        </li>
 
-          <li>
-            <a href="#work-section">Work</a>
-          </li>
+        <li>
+          <a href="#work-section">Work</a>
+        </li>
 
-          <li>
-            <a href="#">Contact Me</a>
-          </li>
+        <li>
+          <a href="#contact-me">Contact Me</a>
+        </li>
 
-          <li>
-            <a href="./assets/files/Resume - Eric Spencer.docx">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Hero section -->
-    <section class="hero">
-      <div class="hero-quote">              
-        <div>Welcome to My Portfolio!</div>
-      </div>
-    </section>
-    <!-- About me section -->
-    <section id="about-section" class="about-me">      
-        <h2>About Me</h2>
-        <div>
-          <p>
-            My name is Eric Spencer. I am currently a Desktop Support Technician
-            at a company called LucidHealth. Just to list a couple of things I
-            currently do; I build, image, and deploy radiology reading
-            workstations for all OhioHealth hospitals, which includes
-            troubleshooting already deployed machines. I initially set foot into
-            the IT field in 2018 when I became a Tier 1 Service Desk Analyst for
-            ascena Retail Group. This really helped kick start my career as it
-            gave me some basic troubleshooting skills, but more importantly, I
-            greatly improved my interpersonal communication skills. This, in turn,
-            helped me advocate for myself a bit more.
-          </p>        
-          <p>
-            I'm always looking to learn new things and further my career, as well
-            as my personal growth. I started looking at software development and
-            decided to take a leap of faith and enrolled in the Ohio State
-            University Web Development Coding Bootcamp in November of 2021. Here,
-            I plan to work towards my goal of becoming a full-stack web developer.
-          </p>
-        </div>
-    </section>
-    <!-- My work section -->
-    <section id="work-section" class="my-work">
-      <h2>Work</h2>
+        <li>
+          <a href="./assets/files/Resume - Eric Spencer.pdf" target="_blank" rel="noopener">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-quote">
+      <div>Welcome to My Portfolio!</div>
+    </div>
+  </section>
+  <!-- About me section -->
+  <section id="about-section" class="about-me">
+    <h2>About Me</h2>
+    <div>
+      <p>
+        My name is Eric Spencer. I am currently a Desktop Support Technician
+        at a company called LucidHealth. Just to list a couple of things I
+        currently do; I build, image, and deploy radiology reading
+        workstations for all OhioHealth hospitals, which includes
+        troubleshooting already deployed machines. I initially set foot into
+        the IT field in 2018 when I became a Tier 1 Service Desk Analyst for
+        ascena Retail Group. This really helped kick start my career as it
+        gave me some basic troubleshooting skills, but more importantly, I
+        greatly improved my interpersonal communication skills. This, in turn,
+        helped me advocate for myself a bit more.
+      </p>
+      <p>
+        I'm always looking to learn new things and further my career, as well
+        as my personal growth. I started looking at software development and
+        decided to take a leap of faith and enrolled in the Ohio State
+        University Web Development Coding Bootcamp in November of 2021. Here,
+        I plan to work towards my goal of becoming a full-stack web developer.
+      </p>
+    </div>
+  </section>
+  <!-- My work section -->
+  <section id="work-section" class="my-work">
+    <h2>Work</h2>
     <div class="projects">
-      <div class="run-buddy">
-        <a href="https://spence22eric.github.io/run-buddy/" target="_blank" rel="noopener">
-          <img src="./assets/images/run-buddy.png" alt="top of the run-buddy landing page"/>
-        </a>      
-        <div>
-          <p class="work-label">Run Buddy</p>
-          <p>HTML/CSS</p>
+      <a class="project-item run-buddy" href="https://spence22eric.github.io/run-buddy/" id="run-buddy" target="_blank" rel="noopener">
+        <div id="run-buddy" class="label">
+          <!-- <img src="./assets/images/run-buddy.png" alt="top of the run-buddy landing page"/> -->
+          <div>
+            <p class="work-label">Run Buddy</p>
+            <p>HTML/CSS</p>
+          </div>
         </div>
-      </div>
-      <div class="google-project">
-        <a href="https://www.google.com/" target="_blank" rel="noopener">
-          <img src="./assets/images/google-home.jpg" alt="google home page with search bar"/>
-        </a>
-        <div>
+      </a>
+    <a class="project-item google-project" href="https://www.google.com/" target="_blank" rel="noopener">
+      <div>
+        <!-- <img src="./assets/images/google-home.jpg" alt="google home page with search bar" /> -->
+        <div class="label">
           <p class="work-label">Google</p>
           <p>HTML/CSS/JS</p>
         </div>
       </div>
-      <div class="horiseon-project">
-        <a href="https://spence22eric.github.io/Horiseon/" target="_blank" rel="noopener"> 
-          <img src="./assets/images/horiseon.png" alt="horiseon website with hero image and header" />
-        </a>
-        <div>
+    </a>
+
+    <a class="project-item horiseon-project" href="https://spence22eric.github.io/Horiseon/" target="_blank" rel="noopener">
+      <div>
+        <!-- <img src="./assets/images/horiseon.png" alt="horiseon website with hero image and header" /> -->
+        <div class="label">
           <p class="work-label">Horiseon</p>
           <p>HTML/CSS</p>
         </div>
       </div>
-      <div class="amazon-project">
-        <a href="https://www.amazon.com/" target="_blank" rel="noopener">
-          <img src="./assets/images/amazon.png" alt="amazon homepage with search bar and suggestions" />
-        </a>
-        <div>
+    </a>
+
+    <a class="project-item amazon-project" href="https://www.amazon.com/" target="_blank" rel="noopener">
+      <div>
+        <!-- <img src="./assets/images/amazon.png" alt="amazon homepage with search bar and suggestions" /> -->
+        <div class="label">
           <p class="work-label">Amazon</p>
           <p>HTML/CSS</p>
         </div>
       </div>
-      <div class="fb-project">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-          <img src="./assets/images/facebook.png" alt="facebook login page"/>
-        </a>
-        <div>
+    </a>
+
+    <a class="project-item fb-project" href="https://www.facebook.com/" target="_blank" rel="noopener">
+      <div>
+        <!-- <img src="./assets/images/facebook.png" alt="facebook login page" /> -->
+        <div class="label">
           <p class="work-label">Facebook</p>
           <p>HTML/CSS</p>
         </div>
       </div>
+    </a>
     </div>
-    </section>
-    <!-- Footer/Contact information -->
-    <footer>
-      <div></div>
-    </footer>
-  </body>
+
+  </section>
+  <!-- Footer/Contact information -->
+  <footer id="contact-me" class="contact-info">
+    <h2>Contact Me</h2>
+    <div>
+      <ul>
+        <li><a href="tel: 614.314.5833">Phone</a></li>
+        <li><a href="mailto: spence22eric@gmail.com">Email</a></li>
+        <li><a href="www.linkedin.com/in/ericspencer22" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/spence22eric" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

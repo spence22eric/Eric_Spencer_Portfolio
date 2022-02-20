@@ -158,31 +158,41 @@ header nav ul li a:hover {
   background-image: url(../images/run-buddy.png);
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.7;
 }
 
 .google-project {
   background-image: url(../images/google-home.jpg);
   background-size: cover;
+  opacity: 0.7;
 }
 
 .horiseon-project {
   background-image: url(../images/horiseon.png);
   background-size: cover;
+  opacity: 0.7;
 }
 
 .amazon-project {
   background-image: url(../images/amazon.png);
   background-size: cover;
+  opacity: 0.7;
 }
 
 .fb-project {
   background-image: url(../images/facebook.png);
   background-size: cover;
+  opacity: 0.7;
 }
 
 #run-buddy {
   width: 30%;
   bottom: 35px;
+}
+
+.run-buddy:hover, .google-project:hover, .horiseon-project:hover, 
+.amazon-project:hover, .fb-project:hover {
+  opacity: 1;
 }
 
 .projects {

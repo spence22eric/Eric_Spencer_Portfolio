@@ -217,6 +217,41 @@ header nav ul li a:hover {
   flex-basis: 100%;
 }
 
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+}
+
+footer ul li {
+  display: flex;
+  border: white solid 4px;  
+  justify-content: center;
+  align-items: center;
+  background: #1c5380;
+}
+
+footer ul li a {
+  display: flex;
+  color: white;
+  font-size: 2vw;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 6em;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer ul li:hover {
+  opacity: 0.8;
+}
+
 
 /* None of the below seemed to have an effect on anything. Background did not turn red after resizing */
 @media screen and (mad-width: 980px) {

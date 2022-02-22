@@ -4,7 +4,7 @@
 
 URL: https://spence22eric.github.io/Eric_Spencer_Portfolio/
 
-This is my portfolio web page where you can see my previoius projects, a brief section about me, and a link to my resume.
+This is my portfolio web page where you can see my previous projects, a brief section about me, and a link to my resume.
 
 # Screenshots
 

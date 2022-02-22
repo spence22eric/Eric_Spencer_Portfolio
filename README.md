@@ -1,6 +1,6 @@
-#Eric Spencer - Portfolio
+# Eric Spencer - Portfolio
 
-##Description
+## Description
 
 URL: https://spence22eric.github.io/Eric_Spencer_Portfolio/
 
